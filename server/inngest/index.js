@@ -202,7 +202,7 @@ const sendNewShowNotifications = inngest.createFunction(
                             </div>`;
             await sendEmail({
                 to: userEmail,
-                subject:
+                subject,
                 body,
             })
         }
