@@ -111,9 +111,56 @@ Admins accessing the admin portal can:
 
 ---
 
-## 📥 Getting Started
+## Getting Started
 
-To set up and run the **BookFlix** project locally:
+To get started with the Work Connect project, follow these steps:
 
-1. **Clone the repository**
+1. Clone the repository from GitHub:
 
+2. **Set Environment Variables**: Navigate to the `frontend` and `backend` folders and add necessary environment variables. You may need to create a `.env` file and configure it with required variables:
+   In the backend/.env file:
+
+   ```
+   MONGODB_URI = your-mongodb-connection-uri
+   CLERK_PUBLISHABLE_KEY = your-clerk-publishable-key
+   CLERK_SECRET_KEY = your-clerk-secret-key  
+   INNGEST_EVENT_KEY = your-inngest-event-key
+   INNGEST_SIGNING_KEY = your-inngest-signing-key
+   TMDB_API_KEY = your-tmdb-api-key 
+   STRIPE_PUBLISHABLE_KEY = your-stripe-publishable-key
+   STRIPE_SECRET_KEY = your-stripe-secret-key
+   STRIPE_WEBHOOK_SECRET = your-stripe-webhook-secret 
+   SENDER_EMAIL = your-sender-email
+   SMTP_USER = your-smtp-user
+   SMTP_PASS = your-smtp-password
+   ```
+
+   In the frontend/.env file:
+
+   ```
+   VITE_CLERK_PUBLISHABLE_KEY = your-publishable-key 
+   VITE_CURRENCY = '$'
+   VITE_BASE_URL = http://localhost:3000
+   VITE_TMDB_IMAGE_BASE_URL = https://image.tmdb.org/t/p/original
+   ```
+
+3. **Install Dependencies**: Install dependencies in the `frontend` and `backend` folders using npm or yarn:
+
+   ```
+   cd frontend
+   npm install
+   cd ../backend
+   npm install
+   ```
+
+4. **Start the Backend Server**: In the `backend` folder, start the development server using npm:
+
+   ```
+   npm run server
+   ```
+
+5. **Start the Frontend**: In the `frontend` folder, start the frontend application:
+
+   ```
+   npm run dev
+   ```
