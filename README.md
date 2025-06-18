@@ -101,7 +101,7 @@ Admins accessing the admin portal can:
 ## 🚀 Deployment — Vercel & Render
 
 - **Frontend:** Deployed on **Vercel**
-- **Backend:** Deployed on **Render**
+- **Backend:** Deployed on **Vercel**
 
 ---
 
